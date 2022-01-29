@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+
+namespace Areas
+{
+    static void main(string[] args)
+    {
+
+        /// Calculadora de area y perimetro
+
+        //Variables
+
+        double lado = 1.2;
+        double area = 3.2;
+        double perimetro = 0.0;
+
+        //Calcular area
+
+        area = lado * lado;
+
+        //Calcular perimetro
+
+        area = lado * 4;
+
+        //Resultados
+
+        Console.WriteLine("El area del cuadrado es = {0} es {1} " ,lado, area)
+        Console.WriteLine("El area del perimetro es {0} " ,perimetro)
+
+    }
+}
