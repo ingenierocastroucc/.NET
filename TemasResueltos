@@ -4,31 +4,27 @@ using System.Linq;
 using System.Text;
 
 
-namespace Areas
+namespace Cadenas
 {
     static void main(string[] args)
     {
-
-        /// Calculadora de area y perimetro
+        /// Obtencion de datos del usuario
 
         //Variables
+        string nombre = "";
+        string apellido = "";
 
-        double lado = 1.2;
-        double area = 3.2;
-        double perimetro = 0.0;
+        //Obtencion de variable
 
-        //Calcular area
+        Console.WriteLine("Dame tu nombre");
+        nombre = Console.ReadLine();
 
-        area = lado * lado;
+        Console.WriteLine("Dame tu apellido");
+        apellido = Console.ReadLine();
+        
+        //Saludo
 
-        //Calcular perimetro
-
-        area = lado * 4;
-
-        //Resultados
-
-        Console.WriteLine("El area del cuadrado es = {0} es {1} " ,lado, area)
-        Console.WriteLine("El area del perimetro es {0} " ,perimetro)
+        Console.WriteLine("Hola {0} {1}" , nombre, apellido);
 
     }
 }
