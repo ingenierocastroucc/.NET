@@ -1,10 +1,11 @@
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 
-namespace Areas
+namespace Perimetros
 {
     static void main(string[] args)
     {
@@ -31,4 +32,25 @@ namespace Areas
         Console.WriteLine("El area del perimetro es {0} " ,perimetro)
 
     }
+    
+        static void main(string[] args)
+    {
+
+        /// Calculadora de grados de temperatura
+
+        //Variables
+
+        double C = 38.03;
+        double F = 0.0;
+
+        //Conversion
+
+        F = (C * 1.8) + 32;
+
+        //Resultados
+
+        Console.WriteLine("Grados C {0} corres ponden a esta cantidad de grados F {1}", C, F)
+
+    }
+    
 }
