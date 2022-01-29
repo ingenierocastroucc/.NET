@@ -4,31 +4,59 @@ using System.Linq;
 using System.Text;
 
 
-namespace Areas
+namespace AreasCasa
 {
     static void main(string[] args)
     {
 
-        /// Calculadora de area y perimetro
+        /// Area de casa con tres habitaciones
 
         //Variables
 
-        double lado = 1.2;
-        double area = 3.2;
-        double perimetro = 0.0;
+        // habitacion uno
+        double ancho = 8.03;
+        double largo = 4.5;
+        double area = 0.0;
+        double ancho2 = 9.03;
+        double largo2 = 7.5;
+        double area2 = 0.0;
+        double ancho3 = 6.00;
+        double largo3 = 2.0;
+        double area3 = 0.0;
 
-        //Calcular area
+        double areatotal = 0.0;
 
-        area = lado * lado;
+        //Calculos
 
-        //Calcular perimetro
+        area = (ancho * largo);
 
-        area = lado * 4;
+        //Areas
 
-        //Resultados
+        Console.WriteLine("El area de la habitacion uno es {0} * {1} = {2} ", ancho, largo, area)
 
-        Console.WriteLine("El area del cuadrado es = {0} es {1} " ,lado, area)
-        Console.WriteLine("El area del perimetro es {0} " ,perimetro)
+        //Calculos
+
+        area2 = (ancho2 * largo2);
+
+        //Areas
+
+        Console.WriteLine("El area de la habitacion uno es {0} * {1} = {2} ", ancho2, largo2, area2)
+
+        //Calculos
+
+        area3 = (ancho3 * largo3);
+
+        //Areas
+
+        Console.WriteLine("El area de la habitacion uno es {0} * {1} = {2} ", ancho3, largo3, area3)
+
+        //Calculos
+
+        areatotal = (area + area2 + area3);
+
+        //Areas
+
+        Console.WriteLine("El area total de la casa es = {0} ", areatotal)
 
     }
 }
