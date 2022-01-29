@@ -4,31 +4,32 @@ using System.Linq;
 using System.Text;
 
 
-namespace Areas
+namespace Numerico
 {
     static void main(string[] args)
     {
-
-        /// Calculadora de area y perimetro
+        /// Cadena numerica
 
         //Variables
 
-        double lado = 1.2;
-        double area = 3.2;
-        double perimetro = 0.0;
+        string dato = "";
+        int valor = 0;
+        double valorf = 0.0;
 
-        //Calcular area
+        //Numero
 
-        area = lado * lado;
-
-        //Calcular perimetro
-
-        area = lado * 4;
+        Console.WriteLine("Ingresa el numero");
+        dato = Console.ReadLine();
+        valor = Convert.ToInt32(dato);
 
         //Resultados
 
-        Console.WriteLine("El area del cuadrado es = {0} es {1} " ,lado, area)
-        Console.WriteLine("El area del perimetro es {0} " ,perimetro)
+        Console.WriteLine("Ingresa el numero flotante");
+        dato = Console.ReadLine();
+        valorf = Convert.ToDouble(dato);
+
+        Console.WriteLine("El numero flotante es {0}" , valorf)
 
     }
 }
+
