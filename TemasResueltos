@@ -1,34 +1,47 @@
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 
-namespace Areas
+namespace Ejercisios
 {
     static void main(string[] args)
     {
-
-        /// Calculadora de area y perimetro
+        /// Calculo de perimetro
 
         //Variables
 
-        double lado = 1.2;
-        double area = 3.2;
+        string dato = "";
+        double ladoA = 0.0;
+        double ladoB = 0.0;
+        double area = 0.0;
         double perimetro = 0.0;
 
-        //Calcular area
+        //Obtencion de datos
 
-        area = lado * lado;
+        Console.WriteLine("Ingresa el valor del lado A");
+        dato = Console.ReadLine();
+        valor = Convert.ToDouble(dato);
+        Console.WriteLine("El lado A es", valor)
 
-        //Calcular perimetro
+        //Obtencion de datos
 
-        area = lado * 4;
+        Console.WriteLine("Ingresa el valor del lado B");
+        dato = Console.ReadLine();
+        valorf = Convert.ToDouble(dato);
+        Console.WriteLine("El lado B es", valorf)
 
-        //Resultados
+        //Calculo de area 
 
-        Console.WriteLine("El area del cuadrado es = {0} es {1} " ,lado, area)
-        Console.WriteLine("El area del perimetro es {0} " ,perimetro)
+        area = ladoA * ladoB;
+        Console.WriteLine("El area del rectangulo de lados {0}, {1} es:",ladoA, ladoB, area)
+
+        //Calculo de perimetro
+
+        perimetro = ladoA + ladoB;
+        Console.WriteLine("El perimetro del rectangulo de lados {0}, {1} es:", ladoA, ladoB, area)
 
     }
 }
