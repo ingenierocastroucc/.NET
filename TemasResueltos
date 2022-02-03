@@ -1,34 +1,47 @@
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 
-namespace Areas
+namespace PromedioTres
 {
     static void main(string[] args)
     {
-
-        /// Calculadora de area y perimetro
+        /// Calculo de perimetro
 
         //Variables
 
-        double lado = 1.2;
-        double area = 3.2;
-        double perimetro = 0.0;
+        string dato = "";
+        double numeroUno = 0.0;
+        double numeroDos = 0.0;
+        double numeroTres = 0.0;
+        double promedio = 0.0;
 
-        //Calcular area
+        //Obtencion de datos
 
-        area = lado * lado;
+        Console.WriteLine("Ingresa el numero uno:");
+        dato = Console.ReadLine();
+        numeroUno = Convert.ToDouble(dato);
 
-        //Calcular perimetro
+        //Obtencion de datos
 
-        area = lado * 4;
+        Console.WriteLine("Ingresa el numero dos:");
+        dato = Console.ReadLine();
+        numeroDos = Convert.ToDouble(dato);
 
-        //Resultados
+        //Obtencion de datos
 
-        Console.WriteLine("El area del cuadrado es = {0} es {1} " ,lado, area)
-        Console.WriteLine("El area del perimetro es {0} " ,perimetro)
+        Console.WriteLine("Ingresa el numero tres:");
+        dato = Console.ReadLine();
+        numeroTres = Convert.ToDouble(dato);
 
+        //Conversion a dolar
+
+        promedio = (numeroUno + numeroDos + numeroTres) / 3;
+        Console.WriteLine("El promedio de los numeros {0}, {1}, {2} es {3}" numeroUno, numeroDos, numeroTres, promedio)
     }
 }
+
+
