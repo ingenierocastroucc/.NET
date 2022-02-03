@@ -1,34 +1,39 @@
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 
-namespace Areas
+namespace Conversion
 {
     static void main(string[] args)
     {
-
-        /// Calculadora de area y perimetro
+        // Conversion valores
 
         //Variables
 
-        double lado = 1.2;
-        double area = 3.2;
-        double perimetro = 0.0;
+        string dato = "";
+        double peso = 0.0;
+        double valorConversion = 0.0;
+        double dolar = 0.0;
 
-        //Calcular area
+        //Obtencion de datos
 
-        area = lado * lado;
+        Console.WriteLine("Ingresa el valor en pesos $");
+        dato = Console.ReadLine();
+        peso = Convert.ToDouble(dato);
 
-        //Calcular perimetro
+        //Obtencion de datos
 
-        area = lado * 4;
+        Console.WriteLine("Ingresa el valor de conversion %");
+        dato = Console.ReadLine();
+        valorConversion = Convert.ToDouble(dato);
 
-        //Resultados
+        //Conversion a dolar
 
-        Console.WriteLine("El area del cuadrado es = {0} es {1} " ,lado, area)
-        Console.WriteLine("El area del perimetro es {0} " ,perimetro)
-
+        dolar = peso / valorConversion;
+        Console.WriteLine("Esta cantidad en pesos: {0} representa esta cantidad en dolares: {1}", peso, dolar)
     }
 }
+
