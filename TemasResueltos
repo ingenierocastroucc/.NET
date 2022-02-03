@@ -23,15 +23,15 @@ namespace Ejercisios
 
         Console.WriteLine("Ingresa el valor del lado A");
         dato = Console.ReadLine();
-        valor = Convert.ToDouble(dato);
-        Console.WriteLine("El lado A es", valor)
+        ladoA = Convert.ToDouble(dato);
+        Console.WriteLine("El lado A es", ladoA)
 
         //Obtencion de datos
 
         Console.WriteLine("Ingresa el valor del lado B");
         dato = Console.ReadLine();
-        valorf = Convert.ToDouble(dato);
-        Console.WriteLine("El lado B es", valorf)
+        ladoB = Convert.ToDouble(dato);
+        Console.WriteLine("El lado B es", ladoB)
 
         //Calculo de area 
 
@@ -40,7 +40,7 @@ namespace Ejercisios
 
         //Calculo de perimetro
 
-        perimetro = ladoA + ladoB;
+        perimetro = 2 (ladoA + ladoB);
         Console.WriteLine("El perimetro del rectangulo de lados {0}, {1} es:", ladoA, ladoB, area)
 
     }
