@@ -9,7 +9,7 @@ namespace Conversion
 {
     static void main(string[] args)
     {
-        /// Calculo de perimetro
+        // Conversion valores
 
         //Variables
 
