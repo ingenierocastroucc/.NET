@@ -4,31 +4,51 @@ using System.Linq;
 using System.Text;
 
 
-namespace Areas
+namespace CondicionalesBloques
 {
     static void main(string[] args)
     {
-
-        /// Calculadora de area y perimetro
+        /// Operaciones aritmeticas con condicinales
 
         //Variables
+        string dato = "";
+        double valorMetros = 0.0;
+        double valorPies = 0.0;
+        int tipoDeCaluculo = "";
+        double resultado = 0.0;
 
-        double lado = 1.2;
-        double area = 3.2;
-        double perimetro = 0.0;
+        //Obtencion de datos
 
-        //Calcular area
+        Console.WriteLine("Ingresa el tipo de calculo que va a realizar, selleccionando el valor de 1 para metros y 2 para pies");
+        dato = Console.ReadLine();
+        tipoDeCaluculo = Convert.ToInt32(dato);
 
-        area = lado * lado;
+        //Obtencion de datos
+        if (tipoDeCaluculo == "1")
+        {
+            Console.WriteLine("Ingresa la cantidad en metros");
+            dato = Console.ReadLine();
+            valorMetros = Convert.ToDouble(dato);
 
-        //Calcular perimetro
+            //calculo
+            resultado = (valorMetros * 3.28) / 1
+            Console.WriteLine("El valor de conversion {0} a pies es de: {1}", valorMetros, resultado)
+        }
 
-        area = lado * 4;
+        //Obtencion de datos
+        if (tipoDeCaluculo == "2")
+        {
+            Console.WriteLine("Ingresa la cantidad en metros");
+            dato = Console.ReadLine();
+            valorPies = Convert.ToString(dato);
 
-        //Resultados
-
-        Console.WriteLine("El area del cuadrado es = {0} es {1} " ,lado, area)
-        Console.WriteLine("El area del perimetro es {0} " ,perimetro)
-
+            //calculo
+            resultado = valorPies / 3.28
+            Console.WriteLine("El valor de conversion {0} a metros es de: {1}", valorPies, resultado)
+        }
+        else
+        {
+            Console.WriteLine("Debe ingresar un tipo de calculo valido")
+        }
     }
 }
