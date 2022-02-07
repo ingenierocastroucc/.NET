@@ -1,34 +1,39 @@
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 
-namespace Areas
+namespace SwitchEjercisios
 {
     static void main(string[] args)
     {
-
-        /// Calculadora de area y perimetro
+        /// ciclo for 
 
         //Variables
+        string dato = "";
+        int n = 0;
+        int cantidad = 0;
+        double numero = 0.0;
+        double calculo = 0.0;
+        double resultado = 0.0;
 
-        double lado = 1.2;
-        double area = 3.2;
-        double perimetro = 0.0;
+        //Obtencion de datos
 
-        //Calcular area
+        Console.WriteLine("Ingresa la cantidad de numeros a ingresar");
+        dato = Console.ReadLine();
+        cantidad = Convert.ToInt32(dato);
 
-        area = lado * lado;
+        //Promedio
+        for (n = 0; n < cantidad; n++) {
+            Console.WriteLine("Ingresa el numero");
+            dato = Console.ReadLine();
+            numero = Convert.ToDouble(dato);
 
-        //Calcular perimetro
-
-        area = lado * 4;
-
-        //Resultados
-
-        Console.WriteLine("El area del cuadrado es = {0} es {1} " ,lado, area)
-        Console.WriteLine("El area del perimetro es {0} " ,perimetro)
-
+            calculo += numero;
+        }
+        resultado = calculo / cantidad;
+        Console.WriteLine("El resultado del promedio es: {0}", resultado)
     }
 }
