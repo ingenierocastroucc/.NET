@@ -4,31 +4,56 @@ using System.Linq;
 using System.Text;
 
 
-namespace Areas
+namespace SwitchEjercisios
 {
     static void main(string[] args)
     {
-
-        /// Calculadora de area y perimetro
+        /// Uso del switch y el if
 
         //Variables
+        string dato = "";
+        double valor = 0.0;
+        int conversion = 0;
+        double resultado = 0.0;
 
-        double lado = 1.2;
-        double area = 3.2;
-        double perimetro = 0.0;
+        //Obtencion de datos
 
-        //Calcular area
+        Console.WriteLine("Ingresa el valor a convertir");
+        dato = Console.ReadLine();
+        valor = Convert.ToDouble(dato);
 
-        area = lado * lado;
+        //Obtencion de datos
 
-        //Calcular perimetro
+        Console.WriteLine("Ingrese el tipo de conversion a: Millas (1) Kilometros (2)");
+        dato = Console.ReadLine();
+        conversion = Convert.ToInt32(dato);
 
-        area = lado * 4;
+        //Condicionales
 
-        //Resultados
+        switch (conversion) {
 
-        Console.WriteLine("El area del cuadrado es = {0} es {1} " ,lado, area)
-        Console.WriteLine("El area del perimetro es {0} " ,perimetro)
-
+            //Determina si es una suma
+            case 1:
+                resultado = (valor / 1.609)
+                break;
+            //Determina si es una resta
+            case 2:
+                resultado = (valor * 1.609)
+                break;
+            default:
+                Console.WriteLine("Debe ingresar una conversion valida");
+                break;
+        }
+        if (conversion == 1 && resultado > 0) {
+            Console.WriteLine("El resultado de la conversion de kilometros a millas es: {0}", resultado)
+        }
+        else if (conversion == 2 && resultado > 0)
+        {
+            Console.WriteLine("El resultado de la conversion de millas a kilometros es: {0}", resultado)
+        }
+        else 
+        {
+            Console.WriteLine("Los valores ingresado estan erroneos, verifique e intente nuevamente")
+        }
     }
 }
